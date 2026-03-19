@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Indigo Gutter Cleaning | Flathead Valley</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <div class="bg-white fixed top-0 left-0 right-0 z-50 w-full shadow-md">
+      <header class="mx-auto w-full max-w-screen-2xl px-3 sm:px-4 md:px-8">
+        <div class="flex items-center justify-between gap-2 py-3 md:py-8">
+          <!-- logo -->
+          <a href="index.html" class="inline-flex items-center gap-1 sm:gap-2.5 text-base sm:text-2xl font-bold text-black md:text-3xl" aria-label="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-indigo-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            Indigo Gutter Cleaning
+          </a>
+
+          <!-- nav - desktop -->
+          <nav class="hidden gap-12 lg:flex">
+            <a href="index.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Home</a>
+            <a href="services.html" class="text-lg font-semibold text-indigo-500 transition duration-100">Services</a>
+            <a href="areas.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Service Areas</a>
+            <a href="about.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+            <a href="contact.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Contact</a>
+          </nav>
+
+          <!-- buttons - desktop -->
+          <div class="hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
+            <a href="tel:4062507605" class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Call 406-250-7605</a>
+          </div>
+
+          <!-- Hamburger -->
+          <button type="button" id="mobile-menu-button" class="inline-flex items-center gap-1.5 sm:gap-2 rounded-lg bg-gray-200 px-2 py-2 text-xs sm:text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 lg:hidden flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+            Menu
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden pb-6 px-2">
+          <nav class="flex flex-col gap-4">
+            <a href="index.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Home</a>
+            <a href="services.html" class="text-lg font-semibold text-indigo-500 transition duration-100">Services</a>
+            <a href="areas.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Service Areas</a>
+            <a href="about.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+            <a href="contact.html" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Contact</a>
+            <a href="tel:4062507605" class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Call 406-250-7605</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="bg-white pb-6 sm:pb-8 lg:pb-12 pt-24 md:pt-32">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <section class="flex flex-col items-center">
+          <div class="flex max-w-xl flex-col items-center pt-8 text-center lg:pt-12">
+            <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl" data-aos="fade-up" data-aos-duration="500">Our Services</h1>
+
+            <p class="mb-8 max-w-md leading-relaxed text-gray-500 md:mb-12 lg:text-lg" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Professional gutter cleaning services throughout the Flathead Valley. We ensure your gutters, downspouts, and roof edges are completely clear so water flows properly.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="bg-gray-50 py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:gap-12">
+          
+          <!-- Service 1: Gutter Cleaning -->
+          <div class="flex flex-col rounded-lg border bg-white p-6 shadow-sm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Gutter Cleaning</h3>
+            <p class="mb-4 text-gray-600">Complete gutter cleaning and debris removal</p>
+            
+            <div class="text-gray-600 space-y-2">
+              <p>We remove leaves, pine needles, roof debris, mud, sediment, and organic buildup. Debris is bagged or placed on tarps to keep your lawn clean.</p>
+              <p class="text-sm font-semibold text-gray-700 mt-4">We remove:</p>
+              <ul class="text-sm space-y-1">
+                <li>• Leaves and pine needles</li>
+                <li>• Roof debris</li>
+                <li>• Mud and sediment</li>
+                <li>• Branches and organic buildup</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 2: Downspout Unclogging -->
+          <div class="flex flex-col rounded-lg border bg-white p-6 shadow-sm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Downspout Unclogging</h3>
+            <p class="mb-4 text-gray-600">Clearing blocked downspouts for proper drainage</p>
+            
+            <div class="text-gray-600 space-y-2">
+              <p>A gutter system only works if downspouts are completely clear. We verify proper drainage by clearing debris and flushing with water when necessary.</p>
+              <p class="text-sm font-semibold text-gray-700 mt-4">Our process:</p>
+              <ul class="text-sm space-y-1">
+                <li>• Clear debris from gutter outlet</li>
+                <li>• Drop test to confirm clearance</li>
+                <li>• Flush with water if needed</li>
+                <li>• Use flexible pipe snakes for tough clogs</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 3: Roof Debris Removal -->
+          <div class="flex flex-col rounded-lg border bg-white p-6 shadow-sm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+            </div>
+
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Roof Debris Removal</h3>
+            <p class="mb-4 text-gray-600">Preventing gutters from clogging again</p>
+            
+            <div class="text-gray-600 space-y-2">
+              <p>Many gutter problems start on the roof. Leaves and debris in roof valleys and along edges quickly wash into gutters during rain. We clear these problem areas.</p>
+              <p class="text-sm font-semibold text-gray-700 mt-4">We clear:</p>
+              <ul class="text-sm space-y-1">
+                <li>• Roof valleys</li>
+                <li>• Areas behind chimneys</li>
+                <li>• Gutter edges</li>
+                <li>• Pine needles and leaves</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 4: Gutter Guard Cleaning -->
+          <div class="flex flex-col rounded-lg border bg-white p-6 shadow-sm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Gutter Guard Cleaning</h3>
+            <p class="mb-4 text-gray-600">Even gutter guards need maintenance</p>
+            
+            <div class="text-gray-600 space-y-2">
+              <p>Most gutter guards still require regular maintenance. Debris builds up on top and underneath. We service all types of guard systems.</p>
+              <p class="text-sm font-semibold text-gray-700 mt-4">We service:</p>
+              <ul class="text-sm space-y-1">
+                <li>• Mesh guards</li>
+                <li>• Metal screens</li>
+                <li>• Foam inserts</li>
+                <li>• Micro-mesh systems</li>
+                <li>• Leaf filter style guards</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 5: Minor Gutter Repairs -->
+          <div class="flex flex-col rounded-lg border bg-white p-6 shadow-sm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Minor Gutter Repairs</h3>
+            <p class="mb-4 text-gray-600">Fixing small issues before they become bigger</p>
+            
+            <div class="text-gray-600 space-y-2">
+              <p>While cleaning, we can address minor issues to prevent larger problems. For major repairs or replacements, we can refer you to trusted local installers.</p>
+              <p class="text-sm font-semibold text-gray-700 mt-4">We can address:</p>
+              <ul class="text-sm space-y-1">
+                <li>• Small gutter leaks</li>
+                <li>• Downspout reattachment</li>
+                <li>• Minor drainage adjustments</li>
+                <li>• Referrals for major work</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 6: Commercial Gutter Cleaning -->
+          <div class="flex flex-col rounded-lg border bg-white p-6 shadow-sm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Commercial Gutter Cleaning</h3>
+            <p class="mb-4 text-gray-600">Reliable maintenance for commercial properties</p>
+            
+            <div class="text-gray-600 space-y-2">
+              <p>We service commercial and multi-unit properties throughout the Flathead Valley with professional, scheduled maintenance programs.</p>
+              <p class="text-sm font-semibold text-gray-700 mt-4">We serve:</p>
+              <ul class="text-sm space-y-1">
+                <li>• Office buildings</li>
+                <li>• Retail properties</li>
+                <li>• Multi-unit residential</li>
+                <li>• Property management companies</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Process Section -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mb-10 md:mb-16 text-center" data-aos="fade-up" data-aos-duration="500">
+          <h2 class="mb-4 text-3xl font-bold text-gray-800 md:mb-6 lg:text-4xl">Our Simple 3-Step Process</h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500 text-white text-2xl font-bold mx-auto shadow-lg">1</div>
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Request a Free Estimate</h3>
+            <p class="text-gray-600">Call, text, or fill out the contact form to schedule a visit.</p>
+          </div>
+
+          <div class="text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500 text-white text-2xl font-bold mx-auto shadow-lg">2</div>
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">On-Site Quote</h3>
+            <p class="text-gray-600">We arrive, inspect your gutters, and provide a clear estimate.</p>
+          </div>
+
+          <div class="text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-500 text-white text-2xl font-bold mx-auto shadow-lg">3</div>
+            <h3 class="mb-2 text-xl font-semibold text-gray-800">Professional Cleaning</h3>
+            <p class="text-gray-600">We remove debris, clear downspouts, and leave your property clean.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guarantee Section -->
+    <div class="bg-gray-50 py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mb-10 md:mb-16 text-center" data-aos="fade-up" data-aos-duration="500">
+          <h2 class="mb-4 text-3xl font-bold text-gray-800 md:mb-6 lg:text-4xl">Our No-Risk Guarantee</h2>
+          <p class="mx-auto max-w-screen-md text-gray-500 md:text-lg">We stand behind our work</p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+          <div class="rounded-lg bg-white border-2 border-green-200 p-6" data-aos="fade-right" data-aos-duration="500">
+            <h3 class="mb-4 text-xl font-bold text-green-900 flex items-center">
+              <svg class="mr-2 h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Clog-Free Guarantee
+            </h3>
+            <p class="text-gray-600">If your gutters clog again from debris we missed, we'll come back and clean them for free.</p>
+          </div>
+
+          <div class="rounded-lg bg-white border-2 border-green-200 p-6" data-aos="fade-left" data-aos-duration="500">
+            <h3 class="mb-4 text-xl font-bold text-green-900 flex items-center">
+              <svg class="mr-2 h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              No-Mess Guarantee
+            </h3>
+            <p class="text-gray-600">Your lawn and landscaping will be left clean and debris-free.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="flex flex-col items-center rounded-lg bg-indigo-500 p-4 sm:p-8" data-aos="zoom-in" data-aos-duration="500">
+          <div class="mb-4 sm:mb-8">
+            <h2 class="text-center text-xl font-bold text-white sm:text-2xl lg:text-3xl">Need Gutter Cleaning?</h2>
+          </div>
+
+          <h1 class="mb-8 text-3xl font-bold text-white sm:text-4xl md:mb-12 md:text-5xl text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Get Your Free Estimate Today</h1>
+
+          <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+            <a href="tel:4062507605" class="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-indigo-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring md:text-base">Call 406-250-7605</a>
+
+            <a href="contact.html" class="inline-block rounded-lg bg-indigo-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-700 focus-visible:ring md:text-base">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <div class="fixed bottom-4 right-3 sm:bottom-6 sm:right-6 z-40">
+      <!-- Contact Options Menu (Hidden by default) -->
+      <div id="contact-menu" class="hidden absolute bottom-full right-0 mb-4 bg-white rounded-lg shadow-2xl border border-gray-200 overflow-hidden w-64 max-w-[calc(100vw-1.5rem)]">
+        <div class="p-3 bg-indigo-500 text-white font-semibold text-sm">
+          Get in Touch
+        </div>
+        <div class="flex flex-col">
+          <a href="tel:4062507605" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-indigo-50 transition duration-150 border-b border-gray-100">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-green-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Call Us</div>
+              <div class="text-xs text-gray-500">406-250-7605</div>
+            </div>
+          </a>
+          <a href="sms:4062507605" class="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-indigo-50 transition duration-150">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Text Us</div>
+              <div class="text-xs text-gray-500">Fast response</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Chat Button -->
+      <button id="chat-button" class="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-500 text-white shadow-lg hover:bg-indigo-600 hover:shadow-xl transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+        <svg id="chat-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-white pt-4 sm:pt-10 lg:pt-12">
+      <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="flex flex-col items-center border-t pt-6">
+          <!-- nav -->
+          <nav class="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
+            <a href="index.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Home</a>
+            <a href="services.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Services</a>
+            <a href="areas.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Service Areas</a>
+            <a href="about.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</a>
+            <a href="contact.html" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact</a>
+          </nav>
+
+          <div class="py-8 text-center text-sm text-gray-400">
+            © 2024 Indigo Gutter Cleaning. All rights reserved. | Serving the Flathead Valley
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 50
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+
+      // Close mobile menu when window is resized to desktop size
+      window.addEventListener('resize', function() {
+        if (window.innerWidth >= 1024) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+
+      // Floating Chat Button Toggle
+      const chatButton = document.getElementById('chat-button');
+      const contactMenu = document.getElementById('contact-menu');
+      const chatIcon = document.getElementById('chat-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      chatButton.addEventListener('click', function() {
+        contactMenu.classList.toggle('hidden');
+        chatIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+
+      // Close contact menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!chatButton.contains(event.target) && !contactMenu.contains(event.target)) {
+          contactMenu.classList.add('hidden');
+          chatIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }
+      });
+    </script>
+  
+</body>
+</html>
